@@ -1,7 +1,6 @@
 import time
 import timeit
 import random
-import numpy as np
 # ===== Variaveis =====
 
 tempoDecorrido = 0
