@@ -42,19 +42,21 @@ def getInfoInsertionSort(tam):
     print("======  InsertionSort  =====")
     tools.ZerarMarcadores()
     tools.MarcarInicio()
+    print(listSelectedOrdenado)  # array
     insertionSort(listSelectedOrdenado)
     tools.MarcarTermino()
-
+    print(listSelectedOrdenado)  # array
     print("=InsertionSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
     print("=InsertionSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
     print("=InsertionSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
     print("==================")
+
     tools.ZerarMarcadores()
     tools.MarcarInicio()
-
+    print(listSelectedInverso)  # array
     insertionSort(listSelectedInverso)
     tools.MarcarTermino()
-
+    print(listSelectedInverso)  # array
     print("=Insertion_Invertido - PIOR CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
     print("=Insertion_Invertido - PIOR CASO = Tempo Comparações = ", tools.comparacoes)
     print("=Insertion_Invertido - PIOR CASO = Trocas = ", tools.trocas)
@@ -62,10 +64,10 @@ def getInfoInsertionSort(tam):
 
     tools.ZerarMarcadores()
     tools.MarcarInicio()
-
+    print(listSelectedAleatorio)  # array
     insertionSort(listSelectedAleatorio)
     tools.MarcarTermino()
-
+    print(listSelectedAleatorio)  # array
     print("=Insertion_Aleatorio - NORMAL CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
     print("=Insertion_Aleatorio - NORMAL CASO = Tempo Comparações = ", tools.comparacoes)
     print("=Insertion_Aleatorio - NORMAL CASO = Trocas = ", tools.trocas)

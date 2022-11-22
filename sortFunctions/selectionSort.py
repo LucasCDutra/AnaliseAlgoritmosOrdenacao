@@ -6,11 +6,13 @@ def selectionSort(arr):
         for j in range(i + 1, len(arr)):
             tools.comparacoes +=1
             if arr[min_idx] > arr[j]: #comparacao
-                min_idx = j#troca
-        arr[i], arr[min_idx] = arr[min_idx], arr[i] #troca
-        tools.trocas +=1
+                aux = arr[min_idx]
+                tools.trocas += 1
+                arr[min_idx] = arr[j]
+                tools.trocas += 1
+                arr[j] = aux
+                tools.trocas += 1
     return arr
-
 
 
 def getInfoSelectionSort(tam):
@@ -30,14 +32,14 @@ def getInfoSelectionSort(tam):
     listSelectedAleatorio = tools.PreencherAleatorio(arrayA)  # array Aleatorio (Caso Padrão)
 
     # Bubble sort
-    #print("======  selectionSort  =====")
+    print("======  selectionSort  =====")
     tools.ZerarMarcadores()
     tools.MarcarInicio()
     #print(listSelectedOrdenado)#array
     selectionSort(listSelectedOrdenado)
     tools.MarcarTermino()
 
-    print(listSelectedOrdenado)#array
+    #print(listSelectedOrdenado)#array
     print("=selectionSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
     print("=selectionSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
     print("=selectionSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
