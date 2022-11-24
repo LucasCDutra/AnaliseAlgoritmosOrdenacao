@@ -57,19 +57,20 @@ def getInfoMergeSort(tam):
     listSelectedInverso = tools.PreencherInverso(arrayI)  # array invertido (Pior Caso)
     listSelectedAleatorio = tools.PreencherAleatorio(arrayA)  # array Aleatorio (Caso Padrão)
 
-    # Bubble sort
-    #print("======  selectionSort  =====")
+    # Merge sort
+    print("======  MergeSort  =====")
+
     tools.ZerarMarcadores()
     tools.MarcarInicio()
     #print(listSelectedOrdenado)#array
     mergeSort(listSelectedOrdenado)
     tools.MarcarTermino()
-
     #print(listSelectedOrdenado)#array
     print("=mergeSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
     print("=mergeSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
     print("=mergeSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
     print("==================")
+
     tools.ZerarMarcadores()
     tools.MarcarInicio()
     #print(listSelectedInverso)#array

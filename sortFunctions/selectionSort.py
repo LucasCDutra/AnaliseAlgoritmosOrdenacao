@@ -32,18 +32,19 @@ def getInfoSelectionSort(tam):
     listSelectedAleatorio = tools.PreencherAleatorio(arrayA)  # array Aleatorio (Caso Padrão)
 
     # Bubble sort
-    print("======  selectionSort  =====")
+    print("======  SelectionSort  =====")
+
     tools.ZerarMarcadores()
     tools.MarcarInicio()
     #print(listSelectedOrdenado)#array
     selectionSort(listSelectedOrdenado)
     tools.MarcarTermino()
-
     #print(listSelectedOrdenado)#array
     print("=selectionSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
     print("=selectionSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
     print("=selectionSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
     print("==================")
+
     tools.ZerarMarcadores()
     tools.MarcarInicio()
     #print(listSelectedInverso)#array

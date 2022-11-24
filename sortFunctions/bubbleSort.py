@@ -37,10 +37,10 @@ def getInfoBubbleSort(tam):
     print("======  BubbleSort  =====")
     tools.ZerarMarcadores()
     tools.MarcarInicio()
-    print(listSelectedOrdenado)  # array
+    #print(listSelectedOrdenado)  # array
     bubbleSort(listSelectedOrdenado)
     tools.MarcarTermino()
-    print(listSelectedOrdenado)  # array
+    #print(listSelectedOrdenado)  # array
     print("=BubbleSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
     print("=BubbleSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
     print("=BubbleSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
@@ -49,10 +49,10 @@ def getInfoBubbleSort(tam):
 
     tools.ZerarMarcadores()
     tools.MarcarInicio()
-    print(listSelectedInverso)  # array
+    #print(listSelectedInverso)  # array
     bubbleSort(listSelectedInverso)
     tools.MarcarTermino()
-    print(listSelectedInverso)  # array
+    #print(listSelectedInverso)  # array
     print("=BubbleSort_Invertido - PIOR CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
     print("=BubbleSort_Invertido - PIOR CASO = Tempo Comparações = ", tools.comparacoes)
     print("=BubbleSort_Invertido - PIOR CASO = Trocas = ", tools.trocas)
@@ -60,10 +60,10 @@ def getInfoBubbleSort(tam):
 
     tools.ZerarMarcadores()
     tools.MarcarInicio()
-    print(listSelectedAleatorio)  # array
+    #print(listSelectedAleatorio)  # array
     bubbleSort(listSelectedAleatorio)
     tools.MarcarTermino()
-    print(listSelectedAleatorio)  # array
+    #print(listSelectedAleatorio)  # array
     print("=BubbleSort_Aleatorio - NORMAL CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
     print("=BubbleSort_Aleatorio - NORMAL CASO = Tempo Comparações = ", tools.comparacoes)
     print("=BubbleSort_Aleatorio - NORMAL CASO = Trocas = ", tools.trocas)

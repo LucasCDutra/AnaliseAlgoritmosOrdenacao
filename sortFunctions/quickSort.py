@@ -51,13 +51,13 @@ def getInfoQuickSort(tam):
   listSelectedAleatorio = tools.PreencherAleatorio(arrayA)  # array Aleatorio (Caso Padrão)
 
   print("======  QuickSort  =====")
+
   tools.ZerarMarcadores()
   tools.MarcarInicio()
-  print(listSelectedOrdenado)  # array
+  #print(listSelectedOrdenado)  # array
   quickSort(listSelectedOrdenado, 0, len(listSelectedOrdenado)-1)
   tools.MarcarTermino()
-
-  print(listSelectedOrdenado)  # array
+  #print(listSelectedOrdenado)  # array
   print("=QuickSort_Ordenado - MELHOR CASO= Tempo Decorrido (em segundos) = ", tools.tempoDecorrido)
   print("=QuickSort_Ordenado - MELHOR CASO= Tempo Comparações = ", tools.comparacoes)
   print("=QuickSort_Ordenado - MELHOR CASO= Trocas = ", tools.trocas)
@@ -65,10 +65,10 @@ def getInfoQuickSort(tam):
 
   tools.ZerarMarcadores()
   tools.MarcarInicio()
-  print(listSelectedInverso)  # array
+  #print(listSelectedInverso)  # array
   quickSort(listSelectedInverso, 0, len(listSelectedInverso)-1)
   tools.MarcarTermino()
-  print(listSelectedInverso)  # array
+  #print(listSelectedInverso)  # array
   print("=Quick_Invertido - PIOR CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
   print("=Quick_Invertido - PIOR CASO = Tempo Comparações = ", tools.comparacoes)
   print("=Quick_Invertido - PIOR CASO = Trocas = ", tools.trocas)
@@ -76,10 +76,10 @@ def getInfoQuickSort(tam):
 
   tools.ZerarMarcadores()
   tools.MarcarInicio()
-  print(listSelectedAleatorio)  # array
+  #print(listSelectedAleatorio)  # array
   quickSort(listSelectedAleatorio, 0, len(listSelectedAleatorio)-1)
   tools.MarcarTermino()
-  print(listSelectedAleatorio)  # array
+  #print(listSelectedAleatorio)  # array
   print("=Quick_Aleatorio - NORMAL CASO = Tempo Decorrido (em segundos)= ", tools.tempoDecorrido)
   print("=Quick_Aleatorio - NORMAL CASO = Tempo Comparações = ", tools.comparacoes)
   print("=Quick_Aleatorio - NORMAL CASO = Trocas = ", tools.trocas)
